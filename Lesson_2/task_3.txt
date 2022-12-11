@@ -1,0 +1,13 @@
+Создание дампа
+
+C:\Users\Pavel Tkachev>mysqldump example > dump.sql
+
+C:\Users\Pavel Tkachev>mysql
+
+Восстановление дампа в другую БД
+
+mysql> CREATE DATABASE sample;
+
+mysql> \q
+
+C:\Users\Pavel Tkachev>mysql sample < dump.sql
